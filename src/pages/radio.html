@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="../pages/button.html">Button</a>
+        <a href="../pages/card.html">Card</a>
+        <a href="../pages/modal.html">Modal</a>
+        <a href="../pages/dropdown.html">Dropdown</a>
+        <a href="../pages/tooltip.html">Tooltip</a>
+        <a href="../pages/toast.html">Toast</a>
+        <a href="../pages/toggle.html">Toggle</a>
+        <a class="nav-active" href="../pages/radio.html">Radio</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Radio Buttons Component -->
+      <div class="radio-component">
+        <h1 class="language-label">Language</h1>
+        <form>
+          <label>
+            <input
+              type="radio"
+              name="language"
+              class="radio-button"
+              value="English"
+              checked
+            />
+            <span class="language-option">English</span>
+          </label>
+          <br />
+          <label>
+            <input
+              type="radio"
+              name="language"
+              class="radio-button"
+              value="Norwegian"
+            />
+            <span class="language-option">Norwegian</span>
+          </label>
+          <br />
+          <label>
+            <input
+              type="radio"
+              name="language"
+              class="radio-button"
+              value="German"
+            />
+            <span class="language-option">German</span>
+          </label>
+        </form>
+      </div>
+    </main>
+    <script src="../js/radio.js"></script>
+  </body>
+</html>

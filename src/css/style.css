@@ -1,0 +1,333 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #120224;
+}
+
+header {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  background-color: #43008f;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #631cb4;
+}
+
+.nav-active {
+  background-color: #250050;
+  font-weight: 600;
+}
+
+main {
+  padding: 20px;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Button Components */
+
+.button-component {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-test {
+  background-color: #43008f;
+  color: white;
+}
+
+.button-default {
+  background-color: #43008f;
+  color: white;
+}
+
+.button-hover {
+  background-color: #631cb4;
+  color: white;
+}
+
+.button-active {
+  background-color: #250050;
+  color: white;
+}
+
+.button-test:active {
+  background-color: #250050;
+  color: white;
+}
+
+.button-test:hover {
+  background-color: #631cb4;
+  color: white;
+}
+
+.button-test:active {
+  background-color: #250050;
+  color: white;
+}
+
+.button-disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+/* Card Components */
+
+.card-component {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 160px;
+  width: 100px;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.card-test {
+  background-color: #43008f;
+  color: white;
+}
+
+.card-default {
+  background-color: #43008f;
+  color: white;
+}
+
+.card-hover {
+  background-color: #631cb4;
+  color: white;
+  width: 120px;
+  height: 180px;
+}
+
+.card-test:hover {
+  background-color: #631cb4;
+  color: white;
+  width: 120px;
+  height: 180px;
+  transition: 0.3s;
+}
+
+/* Modal Components */
+
+.modal-component {
+  margin-top: 1rem;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #8b57ec;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.close-modal {
+  margin-top: 1rem;
+  background-color: #43008f;
+  color: #ffffff;
+}
+
+.close-modal:hover {
+  background-color: #631cb4;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Dropdown Components */
+
+.dropdown-component {
+  margin-top: 1rem;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #43008f;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  color: white;
+  background-color: #250050;
+  border: 1px solid white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #631cb4;
+}
+
+/* Tooltip Components */
+
+.tooltip-component {
+  margin-top: 4rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: #7e4bd1;
+  color: white;
+  text-align: center;
+  padding: 4px;
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+/* Toast Components */
+
+.toast-component {
+  margin-top: 1rem;
+}
+
+.toast {
+  font-family: "Times New Roman", Times, serif;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #808080;
+  color: #ffffff;
+  padding: 10px;
+  display: none;
+}
+
+.toast.shown {
+  display: block;
+}
+
+/* Toggle Components */
+
+.toggle-component {
+  margin-top: 1rem;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #362747;
+  transition: 0.4s;
+  border-radius: 34px;
+  outline: solid 2px white;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ffffff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-checkbox:checked + .slider {
+  background-color: #00b336;
+}
+
+.toggle-checkbox:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Radio Components */
+
+.radio-component {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.radio-button {
+  margin-right: 10px;
+}
+
+.language-label {
+  margin-bottom: 10px;
+  text-align: left;
+}
